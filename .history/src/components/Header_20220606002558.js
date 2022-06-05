@@ -2,7 +2,7 @@ import React from 'react'
 import Filter from './Filter'
 import "./styles.css"
 
-function Header(Props) {
+function Header() {
   return (
     <>
       <header className="header"></header>

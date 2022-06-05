@@ -85,18 +85,19 @@
 .filter {
   display: flex;
   padding: 10px;
-  align-items: center;
   border-radius: 3px;
-  /* margin: -20px 20px 5px 20px; */
+  margin: -20px 20px 5px 20px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .option {
   background-color: hsl(180, 31%, 95%);
   color: hsl(180, 29%, 50%);
-  display: flex;
-  margin: 2vh;
- /* padding: 2vh; */
+  /* display: flex; */
+  align-items: center;
+  width: fit-content;
+  justify-content:flex-start;
+  margin-bottom: 15px;
 }
 .front-end {
   padding: 5px;
@@ -114,7 +115,6 @@
 }
 .clear {
   color: hsl(180, 29%, 50%);
-  justify-self: flex-end;
 }
 .clear:hover {
   cursor: pointer;
@@ -152,8 +152,5 @@
     margin: 0;
     padding: 5px;
     height: 100%;
-  }
-  .filter{
-    justify-content: space-between;
   }
 }

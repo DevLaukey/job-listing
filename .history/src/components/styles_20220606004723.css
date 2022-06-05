@@ -95,8 +95,10 @@
   background-color: hsl(180, 31%, 95%);
   color: hsl(180, 29%, 50%);
   display: flex;
-  margin: 2vh;
- /* padding: 2vh; */
+  /* flex-wrap: wrap; */
+  align-items: center;
+  justify-content:center;
+  margin-bottom: 15px;
 }
 .front-end {
   padding: 5px;
@@ -114,7 +116,6 @@
 }
 .clear {
   color: hsl(180, 29%, 50%);
-  justify-self: flex-end;
 }
 .clear:hover {
   cursor: pointer;
@@ -152,8 +153,5 @@
     margin: 0;
     padding: 5px;
     height: 100%;
-  }
-  .filter{
-    justify-content: space-between;
   }
 }

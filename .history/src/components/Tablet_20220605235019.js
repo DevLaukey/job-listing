@@ -1,10 +1,9 @@
+import React, { useState } from "react";
 import "./styles.css";
-import Tagbox from "./Tagbox";
 
 function Tablet(props) {
-    let {logo, company, featured, position, postedAt, contract, location,level, role, languages, tools} = props.data;
+    let {logo, company,neew, featured, position, postedAt, contract, location,level, role, languages, tools} = props.data;
 
-  let neew = props.data.new;
   return (
     <div className="tablet ">
       <div className="tablet_content">
@@ -34,31 +33,17 @@ function Tablet(props) {
         <hr className="line" />
       </div>
       <div className="tags">
-        <Tagbox
-          onClick={props.onClick}
-          tagList={props.tagList}
-          tagName={role}
-        />
-        <Tagbox
-          onClick={props.onClick}
-          tagList={props.tagList}
-          tagName={level}
-        />
-        {languages.map((e, id) => (
-          <Tagbox
-            onClick={props.onClick}
-            tagList={props.tagList}
-            key={`${id}_${id}_languages`}
-            tagName={e}
-          />
+        <p className="category">{level}</p>
+        <p className="category">{role}</p>
+        {languages.map((language) => (
+          <p key={language} className="category" id="category">
+            {language}
+          </p>
         ))}
-        {tools.map((e, id) => (
-          <Tagbox
-            onClick={props.onClick}
-            tagList={props.tagList}
-            key={`${id}_${id}_tools`}
-            tagName={e}
-          />
+        {tools.map((tool) => (
+          <p key={tool} className="category" id="category">
+            {tool}
+          </p>
         ))}
       </div>
     </div>

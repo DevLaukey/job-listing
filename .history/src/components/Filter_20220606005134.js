@@ -25,9 +25,9 @@ function Filter(Props) {
               </div>
             </div>
           ))}
-          <p className="clear" onClick={() => Props.onClick([])}>
+          <div className="clear" onClick={() => Props.onClick([])}>
             Clear
-          </p>
+          </div>
         </div>
       </div>
     );

@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Filter from "./components/Filter";
 import Header from "./components/Header";
+import JobItem from "./components/Tagbox";
 import Tablet from "./components/Tablet";
 import data from "./data.json";
 
@@ -37,7 +38,8 @@ function App() {
   
   return (
     <div className="App">
-      <Header onClick={setTagList} tagList={tagList} />
+      <Header />
+{/* <Filter /> */}
       {data
         .filter((e) => filterTag(e))
         .map((e, id) => (

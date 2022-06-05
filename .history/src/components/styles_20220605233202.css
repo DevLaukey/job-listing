@@ -10,8 +10,7 @@
   border-radius: 3px;
   font-weight: 700;
 }
-.tablet:hover {
-  transition: 0.2s ease-in-out;
+.boarder {
   border-left: 3px solid hsl(180, 29%, 50%);
 }
 .tablet_content {
@@ -48,10 +47,6 @@
 .title {
   margin-top: 15px;
 }
-.title:hover {
-  cursor: pointer;
-  color: hsl(180, 29%, 50%);
-}
 .details {
   display: flex;
   color: hsl(180, 8%, 52%);
@@ -85,52 +80,39 @@
 .filter {
   display: flex;
   padding: 10px;
-  align-items: center;
   border-radius: 3px;
-  /* margin: -20px 20px 5px 20px; */
+  margin: -20px 20px 5px 20px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .option {
-  background-color: hsl(180, 31%, 95%);
+    background-color: hsl(180, 31%, 95%);
   color: hsl(180, 29%, 50%);
   display: flex;
-  margin: 2vh;
- /* padding: 2vh; */
+  align-items: center;
+  width : fit-content;
+  margin-bottom: 15px;
 }
-.front-end {
-  padding: 5px;
+.front-end{
+ padding: 5px;
 }
 .icon {
   margin-left: 10px;
-  flex-grow: 1;
-  height: 100%;
-  padding: 5px;
+ flex-grow: 1;
+ height:100%;
+ padding: 5px;
   background-color: hsl(180, 29%, 50%);
 }
-.icon:hover {
-  background-color: hsl(180, 14%, 20%);
-  transition: 0.2s ease-in-out;
-}
-.clear {
-  color: hsl(180, 29%, 50%);
-  justify-self: flex-end;
-}
-.clear:hover {
-  cursor: pointer;
-  padding: 3px;
-  text-decoration: underline;
-  transition: 0.2s ease-in-out;
-}
-.desktop {
-  display: block;
-}
-.category:hover {
-  transition: 0.2s ease-in-out;
-  cursor: pointer;
+.clear{
+      color: hsl(180, 8%, 52%);
+    }
+   .desktop{
+     display: block;
+   }
+   .category:hover{
+cursor: pointer;
   background-color: hsl(180, 29%, 50%);
-  color: white;
-}
+color: white;   }
 /* media query */
 
 @media screen and (min-width: 768px) {
@@ -145,15 +127,10 @@
     align-items: center;
     justify-content: space-between;
   }
-  .desktop {
-    display: flex;
-  }
-  .image {
-    margin: 0;
-    padding: 5px;
-    height: 100%;
-  }
-  .filter{
-    justify-content: space-between;
-  }
+.desktop{
+  display: flex;  
+}.image{
+  margin: 0;
+  padding: 5px;
+height: 100%;}
 }

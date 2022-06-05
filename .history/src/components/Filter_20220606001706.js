@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 function Filter(Props) {
   function handleClick(tagNameTarget) {
     Props.onClick(Props.tagList.filter((tag) => tag !== tagNameTarget));
@@ -7,13 +8,13 @@ function Filter(Props) {
     return "";
   } else {
     return (
-      <div className="tablet">
-        <div className="filter">
+      <div className="tablet filter">
+        <div className="option">
           {Props.tagList.map((e, id) => (
-            <div className="option">
-              <p className="front-end" key={id}>
+            <>
+              <h1 className="front-end" key={id}>
                 {e}
-              </p>
+              </h1>
               <div className="icon" onClick={() => handleClick(e)}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14">
                   <path
@@ -23,11 +24,11 @@ function Filter(Props) {
                   />
                 </svg>
               </div>
-            </div>
+            </>
           ))}
-          <p className="clear" onClick={() => Props.onClick([])}>
+          <h1 className="clear" onClick={() => Props.onClick([])}>
             Clear
-          </p>
+          </h1>
         </div>
       </div>
     );

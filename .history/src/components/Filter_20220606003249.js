@@ -7,13 +7,13 @@ function Filter(Props) {
     return "";
   } else {
     return (
-      <div className="tablet">
-        <div className="filter">
+      <div className="tablet filter">
           {Props.tagList.map((e, id) => (
-            <div className="option">
-              <p className="front-end" key={id}>
+            <>
+        <div className="option">
+              <h1 className="front-end" key={id}>
                 {e}
-              </p>
+              </h1>
               <div className="icon" onClick={() => handleClick(e)}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14">
                   <path
@@ -22,14 +22,14 @@ function Filter(Props) {
                     d="M11.314 0l2.121 2.121-4.596 4.596 4.596 4.597-2.121 2.121-4.597-4.596-4.596 4.596L0 11.314l4.596-4.597L0 2.121 2.121 0l4.596 4.596L11.314 0z"
                   />
                 </svg>
-              </div>
-            </div>
+                </div>
+                </div>
+            </>
           ))}
-          <p className="clear" onClick={() => Props.onClick([])}>
+          <h1 className="clear" onClick={() => Props.onClick([])}>
             Clear
-          </p>
+          </h1>
         </div>
-      </div>
     );
   }
 }

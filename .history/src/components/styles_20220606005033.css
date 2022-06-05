@@ -95,12 +95,12 @@
   background-color: hsl(180, 31%, 95%);
   color: hsl(180, 29%, 50%);
   display: flex;
-  margin: 2vh;
- /* padding: 2vh; */
+  margin-left: 2vh;
+ padding: 2vh;
 }
-.front-end {
+/* .front-end {
   padding: 5px;
-}
+} */
 .icon {
   margin-left: 10px;
   flex-grow: 1;
@@ -152,8 +152,5 @@
     margin: 0;
     padding: 5px;
     height: 100%;
-  }
-  .filter{
-    justify-content: space-between;
   }
 }

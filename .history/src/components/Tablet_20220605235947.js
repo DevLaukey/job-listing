@@ -34,16 +34,8 @@ function Tablet(props) {
         <hr className="line" />
       </div>
       <div className="tags">
-        <Tagbox
-          onClick={props.onClick}
-          tagList={props.tagList}
-          tagName={role}
-        />
-        <Tagbox
-          onClick={props.onClick}
-          tagList={props.tagList}
-          tagName={level}
-        />
+        <p className="category">{level}</p>
+        <p className="category">{role}</p>
         {languages.map((e, id) => (
           <Tagbox
             onClick={props.onClick}
