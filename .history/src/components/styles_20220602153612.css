@@ -1,0 +1,12 @@
+.header{
+background-image: url(../assets/bg-header-mobile.svg);
+padding: 5vh;
+}
+
+/* media query */
+
+@media screen and (min-width: 768px ){
+  .header{
+  background-image: url(../assets/bg-header-desktop.svg);
+  }
+}

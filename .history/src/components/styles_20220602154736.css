@@ -1,0 +1,18 @@
+.header{
+background-image: url(../assets/bg-header-mobile.svg);
+padding: 10vh;
+background-color: hsl(180, 29%, 50%);
+}
+.tablet{
+    border: 3px solid  hsl(180, 29%, 50%);
+    border-radius: 15px;
+
+}
+
+/* media query */
+
+@media screen and (min-width: 768px ){
+  .header{
+  background-image: url(../assets/bg-header-desktop.svg);
+  }
+}

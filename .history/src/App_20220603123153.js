@@ -6,6 +6,7 @@ import data from "./data.json";
 
 function App() {
   const tablets = data.map((data) =>
+  // const categories = data.languages.push(tools)
   (<Tablet
     key={data.id}
     company={data.company}

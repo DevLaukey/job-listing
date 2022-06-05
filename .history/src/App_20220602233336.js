@@ -1,12 +1,10 @@
 import "./App.css";
-import Filter from "./components/Filter";
 import Header from "./components/Header";
 import Tablet from "./components/Tablet";
 import data from "./data.json";
 
 function App() {
-  const tablets = data.map((data) =>
-  (<Tablet
+  const tablets = data.map((data) => <Tablet
     key={data.id}
     company={data.company}
     neew={data.new}
@@ -19,13 +17,10 @@ function App() {
     location={data.location}
     languages={data.languages}
     tools={data.tools}
-    logo={data.logo} />));
-  
-  
+    logo={data.logo} />);
   return (
     <div className="App">
       <Header />
-      <Filter />
       <div className="content">{tablets}</div>
     </div>
   );

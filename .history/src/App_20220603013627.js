@@ -5,8 +5,7 @@ import Tablet from "./components/Tablet";
 import data from "./data.json";
 
 function App() {
-  const tablets = data.map((data) =>
-  (<Tablet
+  const tablets = data.map((data) => <Tablet
     key={data.id}
     company={data.company}
     neew={data.new}
@@ -19,7 +18,7 @@ function App() {
     location={data.location}
     languages={data.languages}
     tools={data.tools}
-    logo={data.logo} />));
+    logo={data.logo} />);
   
   
   return (

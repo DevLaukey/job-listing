@@ -1,0 +1,38 @@
+.header{
+background-image: url(../assets/bg-header-mobile.svg);
+padding: 10vh;
+background-color: hsl(180, 29%, 50%)
+
+}
+.tablet{
+    border: 3px solid  hsl(180, 29%, 50%);
+    border-radius: 15px;
+    margin: 20px 15px 20px 15px;
+}
+
+.image{
+    height: 50px;
+    margin-left: 15px;
+    margin-top: -20px;
+}
+.heading{
+    font-family: 'League Spartan', sans-serif;
+    display:flex;
+    margin-left: 15px;
+    font-weight: 700;
+}
+.company{
+color: hsl(180, 29%, 50%);
+margin-right: 15px;
+}
+.new{
+    background-color:hsl(180, 29%, 50%);
+    padding: 5px
+}
+/* media query */
+
+@media screen and (min-width: 768px ){
+  .header{
+  background-image: url(../assets/bg-header-desktop.svg);
+  }
+}
