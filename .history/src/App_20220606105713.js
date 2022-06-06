@@ -16,6 +16,21 @@ function App() {
       return tagList.every((tag) => jobTags.includes(tag));
     }
   }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
   return (
     <div className="App">

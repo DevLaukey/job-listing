@@ -7,7 +7,7 @@ function Filter(Props) {
     return "";
   } else {
     return (
-      <div className="mobile-tablet">
+      <div className="tablet">
         <div className="filter">
           {Props.tagList.map((e, id) => (
             <div className="option">
@@ -25,10 +25,10 @@ function Filter(Props) {
               </div>
             </div>
           ))}
-        </div>
           <p className="clear" onClick={() => Props.onClick([])}>
             Clear
           </p>
+        </div>
       </div>
     );
   }

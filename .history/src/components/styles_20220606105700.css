@@ -3,8 +3,7 @@
   padding: 10vh;
   background-color: hsl(180, 29%, 50%);
 }
-.tablet,
-.mobile-tablet {
+.tablet {
   background-color: white;
   margin: 25px 25px 20px 25px;
   font-family: "League Spartan", sans-serif;

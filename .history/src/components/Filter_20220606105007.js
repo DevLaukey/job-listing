@@ -7,10 +7,10 @@ function Filter(Props) {
     return "";
   } else {
     return (
-      <div className="mobile-tablet">
-        <div className="filter">
+      <div className="tablet">
+        <div className="filter option">
           {Props.tagList.map((e, id) => (
-            <div className="option">
+            <>
               <p className="front-end" key={id}>
                 {e}
               </p>
@@ -23,12 +23,12 @@ function Filter(Props) {
                   />
                 </svg>
               </div>
-            </div>
+            </>
           ))}
-        </div>
           <p className="clear" onClick={() => Props.onClick([])}>
             Clear
           </p>
+        </div>
       </div>
     );
   }

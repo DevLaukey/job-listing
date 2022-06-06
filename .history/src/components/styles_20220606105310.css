@@ -3,18 +3,12 @@
   padding: 10vh;
   background-color: hsl(180, 29%, 50%);
 }
-.tablet,
-.mobile-tablet {
+.tablet {
   background-color: white;
   margin: 25px 25px 20px 25px;
   font-family: "League Spartan", sans-serif;
   border-radius: 3px;
   font-weight: 700;
-}
-.mobile-tablet {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 .tablet:hover {
   transition: 0.2s ease-in-out;
@@ -89,19 +83,20 @@
 }
 
 .filter {
-  display: flex;
-
+  /* display: flex; */
   padding: 10px;
   align-items: center;
   border-radius: 3px;
-
-  flex-wrap: wrap;
+  /* margin: -20px 20px 5px 20px; */
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 .option {
   background-color: hsl(180, 31%, 95%);
   color: hsl(180, 29%, 50%);
   display: flex;
   margin: 2vh;
+ /* padding: 2vh; */
 }
 .front-end {
   padding: 5px;
@@ -119,8 +114,7 @@
 }
 .clear {
   color: hsl(180, 29%, 50%);
-  margin-right: 20px;
-}
+margin-right: 20px;}
 .clear:hover {
   cursor: pointer;
   padding: 3px;
@@ -136,6 +130,7 @@
   background-color: hsl(180, 29%, 50%);
   color: white;
 }
+/* media query */
 
 @media screen and (min-width: 768px) {
   .header {
@@ -157,7 +152,7 @@
     padding: 5px;
     height: 100%;
   }
-  .filter {
-    justify-content: space-between;
+  .filter{
+    justify-content: space-between; 
   }
 }
